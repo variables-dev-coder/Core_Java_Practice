@@ -23,7 +23,7 @@ public class AccessModifierDemo {
 
         // Outside class
         // Inside package
-        
+
         //System.out.println(obj.a); // private
         System.out.println("Default: " + obj.b);
         System.out.println("Protected: " + obj.c);
