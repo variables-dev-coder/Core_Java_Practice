@@ -1,8 +1,5 @@
 package day7_Encapsulation;
 
-
-import javax.xml.namespace.QName;
-
 class Employee2 {
     String name;
     int id;
@@ -10,7 +7,7 @@ class Employee2 {
 
     // Default constructor
     Employee2 () {
-        name = "Unkhown";
+        name = "Unknown";
         id = 0;
         salary = 0.0;
     }
@@ -51,8 +48,6 @@ public class ConstructorOverload2 {
         e3.showDisplay();
         e4.showDisplay();
         e5.showDisplay();
-
-
 
     }
 }
