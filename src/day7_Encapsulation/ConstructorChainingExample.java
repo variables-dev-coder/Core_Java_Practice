@@ -20,7 +20,7 @@ class Student2 {
 
     // Default constructor (calls 2-param constructor)
     Student2() {
-        this("Unknown",10);
+        this("Unknown",18);
     }
 
     void show() {
