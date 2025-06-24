@@ -1,12 +1,6 @@
 package day8_StaticKeywordStaticBlockStaticMethod;
 
 
-class MyClass {
-    static void greed() {
-        System.out.println("Hello from static method");
-    }
-}
-
 class MathUtility {
     static int add(int a, int b) {
         return a + b;
