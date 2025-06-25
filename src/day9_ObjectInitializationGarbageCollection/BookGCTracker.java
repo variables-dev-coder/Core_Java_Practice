@@ -3,6 +3,7 @@ package day9_ObjectInitializationGarbageCollection;
 
 
 class Book {
+
     static int count = 0;
 
     @Override
