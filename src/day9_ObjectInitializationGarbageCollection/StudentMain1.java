@@ -1,7 +1,9 @@
 package day9_ObjectInitializationGarbageCollection;
 
+// Default Initialization
+// When no constructor or value is assigned.
 
-class Student {
+class Student1 {
     int id;        // 0
     String name;  // null
 
@@ -9,9 +11,11 @@ class Student {
         System.out.println("ID: " + id + ", Name: " + name);
     }
 }
-public class Main {
+
+public class StudentMain1 {
     public static void main(String[] args) {
-        Student s1 = new Student();
+
+        Student1 s1 = new Student1();
         s1.display();
     }
 }
