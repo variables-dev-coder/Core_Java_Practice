@@ -19,3 +19,14 @@ public class SecondSmallest {
         System.out.println("Second Smallest: " + second);
     }
 }
+
+
+/*
+
+Step 1: Set first = MIN, second = MIN
+Step 2: Loop through array
+Step 3: If current > first → update both
+Step 4: Else if current > second and != first → update second
+
+
+ */
