@@ -7,9 +7,12 @@ public class BubbleSortPractice {
     // Ascending Order
     public static void bubbleSortAscending(int[] arr) {
         int n = arr.length;
+
         System.out.print("Ascending Order: ");
+
         for (int i = 0; i < n - 1; i++) {
             boolean swapped = false;
+
             for (int j = 0; j < n - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     // swap
@@ -28,9 +31,12 @@ public class BubbleSortPractice {
     // Descending order
     public static void bubbleSortDescending(int[] arr) {
         int n = arr.length;
+
         System.out.print("Descending Order: ");
+
         for (int i = 0; i < n-1; i++) {
             boolean swapped = false;
+
             for (int j = 0; j < n - 1 - i; j++) {
                 if (arr[j] < arr[j + 1]) {
                     // swap
