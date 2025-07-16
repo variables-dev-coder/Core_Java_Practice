@@ -1,44 +1,45 @@
 package day26_Singly_LinkedList;
 
 
-class Node3 {
+class Node5 {
     int data;
-    Node3 next;
+    Node5 next;
 
-    Node3(int data) {
+    Node5(int data) {
         this.data = data;
         this.next = null;
     }
 }
 
-public class SinglyLinkedList_3 {
-    Node3 head;
+// Main Public class
+public class SinglyLinkedList_4 {
 
-    // Add First, Beginning
+    Node5 head;
+
+    // Add first
     public void addFirst(int data) {
-        Node3 newNode = new Node3(data);
+        Node5 newNode = new Node5(data);
         newNode.next = head;
         head = newNode;
     }
 
     // Add last
     public void addLast(int data) {
-        Node3 newNode = new Node3(data);
+        Node5 newNode = new Node5(data);
         if (head == null) {
             head = newNode;
             return;
         }
-
-        Node3 temp = head;
+        Node5 temp = head;
         while (temp.next != null) {
             temp = temp.next;
         }
         temp.next = newNode;
     }
 
-    // Print List
+    //Print method
     public void print() {
-        Node3 curr = head;
+        Node5 curr = head;
         while (curr != null) {
             System.out.print(curr.data + " -> ");
             curr = curr.next;
@@ -48,13 +49,12 @@ public class SinglyLinkedList_3 {
 
     // Main method
     public static void main(String[] args) {
-        SinglyLinkedList_3 list = new SinglyLinkedList_3();
+
+        SinglyLinkedList_4 list = new SinglyLinkedList_4();
 
         list.addFirst(10);
         list.addFirst(20);
-        list.addFirst(9);
         list.addLast(30);
-        list.addLast(26);
 
         list.print();
     }
