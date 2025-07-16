@@ -47,6 +47,55 @@ public class SinglyLinkedList {
         System.out.println("null");
     }
 
+    // 4. Search (int key)
+    public boolean search(int key) {
+        Node curr = head;
+
+        while (curr != null) {
+            if (curr.data == key) {
+                return true;
+            }
+            curr = curr.next;
+        }
+        return false;
+    }
+
+    // 5. get size()
+    public int getSize() {
+        int count = 0;
+        Node temp = head;
+
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+    // 6. deleteByValue(int key)
+    public void deleteByValue(int key) {
+        if (head == null)
+            return;
+
+        // case 1: key is in head
+        if (head.data == key) {
+            head = head.next;
+            return;
+        }
+
+        Node curr = head;
+        while (curr.next != null && curr.next.data != key) {
+            curr = curr.next;
+        }
+
+        // case 2: key not found
+        if (curr.next == null)
+            return;
+
+        // Case 3: key found
+        curr.next = curr.next.next;
+    }
+
     // Main method
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
@@ -56,5 +105,30 @@ public class SinglyLinkedList {
         list.addLast(30);     // list: 10 -> 20 -> 30
 
         list.printList();          // Output: 10 -> 20 -> 30 -> null
+
+
+        // Search for 20
+        System.out.println("Is 20 present? " + list.search(20));  // true
+
+        // Get size
+        System.out.println("Size of List: " + list.getSize());    // 3
+
+        // Delete 10
+        list.deleteByValue(10);
+        System.out.print("After deleting 10: ");
+        list.printList();          // Output: 20 -> 30 -> null
+
+        list.deleteByValue(100);
+        System.out.println("After deleting Non-existing value: ");
+        list.printList();
+
+        list.deleteByValue(30);
+        System.out.println("After deleting 30: ");
+        list.printList();
+
+        list.deleteByValue(20);
+        System.out.println("After deleting 20: ");   // null
+        list.printList();
+
     }
 }
