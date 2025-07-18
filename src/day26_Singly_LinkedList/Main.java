@@ -12,7 +12,7 @@ class Node11 {
     }
 }
 
-class LinkedList {
+class LinkedList11 {
     Node11 head;
 
     // add to end
@@ -67,7 +67,7 @@ class LinkedList {
 public class Main {
     public static void main(String[] args) {
 
-        LinkedList list = new LinkedList();
+        LinkedList11 list = new LinkedList11();
 
         list.add(10);
         list.add(20);
