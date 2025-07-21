@@ -1,5 +1,6 @@
 package day27_Doubly_Linked_List;
 
+// DLL Class with Add front and Print Forward backward
 
 // Create Node and Basic DLL Structure
 
@@ -63,7 +64,7 @@ public class DoublyLinkedList {
         dll.insertAtFrond(30);
         dll.insertAtFrond(40);
 
-        dll.printForward();
-        dll.printBackward();
+        dll.printForward();   // 40 30 20 10
+        dll.printBackward();  // 10 20 30 40
     }
 }
