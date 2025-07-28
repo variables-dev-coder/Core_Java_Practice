@@ -3,7 +3,7 @@ package day29_Circular_Doubly_Linked_List;
 
 // Circular Doubly Linked List, Insert at End (Tail)
 
-public class CircularDoublyLinkedList {
+public class InsertAtEnd {
     Node1 head = null;
     Node1 tail = null;
 
@@ -53,7 +53,7 @@ public class CircularDoublyLinkedList {
     }
 
     public static void main(String[] args) {
-        CircularDoublyLinkedList cdll = new CircularDoublyLinkedList();
+        InsertAtEnd cdll = new InsertAtEnd();
 
         cdll.insertAtEnd(10);
         cdll.insertAtEnd(20);
