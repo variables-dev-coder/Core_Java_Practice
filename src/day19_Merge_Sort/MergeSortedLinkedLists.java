@@ -5,7 +5,7 @@ package day19_Merge_Sort;
 
 class ListNode {
     int val;
-    ListNode next;
+    ListNode3 next;
 
     ListNode(int val) {
         this.val = val;
@@ -16,24 +16,24 @@ public class MergeSortedLinkedLists {
 
     public static void main(String[] args) {
         // Creating first sorted list: 1 -> 3 -> 5
-        ListNode l1 = new ListNode(1);
-        l1.next = new ListNode(3);
-        l1.next.next = new ListNode(5);
+        ListNode3 l1 = new ListNode3(1);
+        l1.next = new ListNode3(3);
+        l1.next.next = new ListNode3(5);
 
         // Creating second sorted list: 2 -> 4 -> 6
-        ListNode l2 = new ListNode(2);
-        l2.next = new ListNode(4);
-        l2.next.next = new ListNode(6);
+        ListNode3 l2 = new ListNode3(2);
+        l2.next = new ListNode3(4);
+        l2.next.next = new ListNode3(6);
 
-        ListNode mergedHead = mergeTwoLists(l1, l2);
+        ListNode3 mergedHead = mergeTwoLists(l1, l2);
         printList(mergedHead);
     }
 
     // Function to merge two sorted linked lists
-    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    public static ListNode3 mergeTwoLists(ListNode3 l1, ListNode3 l2) {
         // Dummy node to form the base of merged list
-        ListNode dummy = new ListNode(-1);
-        ListNode tail = dummy;
+        ListNode3 dummy = new ListNode3(-1);
+        ListNode3 tail = dummy;
 
         // Traverse both lists and pick smaller node
         while (l1 != null && l2 != null) {
@@ -58,7 +58,7 @@ public class MergeSortedLinkedLists {
     }
 
     // Function to print linked list
-    public static void printList(ListNode head) {
+    public static void printList(ListNode3 head) {
         while (head != null) {
             System.out.print(head.val + " -> ");
             head = head.next;
