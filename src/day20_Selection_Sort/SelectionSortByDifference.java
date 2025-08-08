@@ -37,7 +37,7 @@ public class SelectionSortByDifference {
 
         System.out.println("\nSorted Array: ");
         for (int num : arr) {
-            System.out.print(num + " ");    // 6 8 9 5 10 3 2 
+            System.out.print(num + " ");    // 6 8 9 5 10 3 2
         }
     }
 }
