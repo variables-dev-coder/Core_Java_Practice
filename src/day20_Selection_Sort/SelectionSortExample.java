@@ -1,6 +1,6 @@
 package day20_Selection_Sort;
 
-public class InsertionSortExample {
+public class SelectionSortExample {
 
     public static void selectionSort(int[] arr) {
         int n = arr.length;
@@ -35,7 +35,7 @@ public class InsertionSortExample {
 
         System.out.println("\nSorted Array: ");
         for (int num : arr) {
-            System.out.print(num + " ");  // 0 1 3 5 7 8
+            System.out.print(num + " ");  // 0 1 3 5 7 8 
         }
     }
 }
