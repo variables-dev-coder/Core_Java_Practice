@@ -38,7 +38,7 @@ public class SelectionSortStrings {
 
         System.out.println("\nSorted Array by length then alphabetically: ");
         for (String num : arr) {
-            System.out.print(num + " ");   // bat cat apple banana apricot 
+            System.out.print(num + " ");   // bat cat apple banana apricot
         }
     }
 }
