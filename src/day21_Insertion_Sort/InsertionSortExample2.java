@@ -28,7 +28,7 @@ public class InsertionSortExample2 {
 
         insertionSort(arr);
 
-        System.out.println("After sorting: ");
+        System.out.println("\nAfter sorting: ");
         for (int num : arr) {
             System.out.print(num + " ");
         }
