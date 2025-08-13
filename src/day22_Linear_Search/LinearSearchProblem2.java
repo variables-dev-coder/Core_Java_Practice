@@ -27,3 +27,15 @@ public class LinearSearchProblem2 {
         }
     }
 }
+
+/*
+Problem 2: Find All Occurrences of a Target Element
+Question:
+Given an array, find all indexes where the target element appears.
+
+Logic
+Iterate over the array.
+If an element matches the target → store its index in a list.
+If no match found → return an empty list.
+
+ */
