@@ -2,12 +2,12 @@ package day1_basics;
 
 
 // Parent class
-class Vehicle7 {
+class Vehicle6 {
     String brand;
     int year;
 
     // Constructor
-    Vehicle7(String brand, int year) {
+    Vehicle6(String brand, int year) {
         this.brand = brand;
         this.year = year;
     }
@@ -22,11 +22,11 @@ class Vehicle7 {
 }
 
 // Child class
-class Car7 extends Vehicle7 {
+class Car6 extends Vehicle6 {
     int doors;
 
     // Constructor for child class
-    Car7(String brand, int year, int doors) {
+    Car6(String brand, int year, int doors) {
         super(brand, year); // calling parent constructor
         this.doors = doors;
     }
@@ -41,14 +41,14 @@ public class OOPExample6 {
     public static void main(String[] args) {
 
         // Creating parent class object
-        Vehicle7 vehicle = new Vehicle7("Generic Vehicle", 2020);
+        Vehicle6 vehicle = new Vehicle6("Generic Vehicle", 2020);
         vehicle.start();
         vehicle.stop();
 
         System.out.println();
 
         // Creating child class object
-        Car7 car = new Car7("Toyota", 2024, 4);
+        Car6 car = new Car6("Toyota", 2024, 4);
         car.start();   // inherited method
         car.honk();    // child method
         car.stop();    // inherited method
