@@ -21,7 +21,7 @@ class Vehicle1 {
 public class OOPExample1 {
     public static void main(String[] args) {
         // Creating an object of Vehicle
-        Vehicle car = new Vehicle("Toyota", 2022);
+        Vehicle1 car = new Vehicle1("Toyota", 2022);
 
         // Calling method
         car.displayInfo();
