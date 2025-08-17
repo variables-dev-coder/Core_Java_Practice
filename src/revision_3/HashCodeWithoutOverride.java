@@ -28,3 +28,7 @@ public class HashCodeWithoutOverride {
 // 455659002
 // 250421012
 // false
+
+// Even though both objects have same data → hashCode() is different.
+
+// equals() also returns false (since we didn’t override).
