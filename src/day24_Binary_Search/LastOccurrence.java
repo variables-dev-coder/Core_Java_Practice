@@ -29,3 +29,9 @@ public class LastOccurrence {
         System.out.println("Last Occurrence of " + target + " = " + index);
     }
 }
+
+/*
+Explanation
+When arr[mid] == target, record index but move right (low = mid + 1) to find the last occurrence.
+After loop ends, result gives the last occurrence index.
+ */
