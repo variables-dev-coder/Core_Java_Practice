@@ -60,4 +60,34 @@ Target: 16
 | 2    | 4   | 6    | 5   | 23        | 23 > 16 → left half, high = 4 |
 | 3    | 4   | 4    | 4   | 16        | Found!                        |
 Index of 16 = 4
+
+
+5. Variants of Binary Search
+Lower Bound → First occurrence of element ≥ target
+Upper Bound → First element > target
+Binary Search on Descending Array → Compare and reverse the conditions
+
+6. Time & Space Complexity
+| Approach  | Best Case | Worst Case | Average Case | Space Complexity |
+| --------- | --------- | ---------- | ------------ | ---------------- |
+| Iterative | O(1)      | O(log n)   | O(log n)     | O(1)             |
+| Recursive | O(1)      | O(log n)   | O(log n)     | O(log n) stack   |
+
+
+7. Advantages
+Very fast for large sorted datasets.
+Simple and easy to implement.
+Reduces the search space drastically each step → O(log n).
+
+8. Disadvantages
+Works only on sorted arrays.
+Recursive version may use extra stack memory.
+Not suitable for linked lists (no direct indexing).
+
+Key Points to Remember
+Always sort the array before applying binary search.
+Be careful with mid calculation to avoid integer overflow:
+mid = low + (high - low) / 2
+Use iterative for space efficiency, recursive for simplicity.
+
  */
