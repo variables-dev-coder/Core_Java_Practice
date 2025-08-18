@@ -29,3 +29,14 @@ public class FirstOccurrence {
         System.out.println("First occurrence of " + target + " = " + index);
     }
 }
+
+/*
+Explanation
+
+Normal binary search logic.
+When arr[mid] == target:
+Update result to mid
+Move left (high = mid - 1) to check for earlier occurrences.
+When search ends, result holds the first occurrence index.
+
+ */
