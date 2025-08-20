@@ -163,6 +163,88 @@ public class IterableExample {
     Even Map is not directly iterable (since it’s key-value), but you can iterate using entrySet(), keySet(), or values().
 
 
+1. Iterable (Interface)
+    Package: java.lang
+    Purpose: Represents a collection of elements that can be traversed.
+
+Definition:
+
+public interface Iterable<T> {
+    Iterator<T> iterator();
+}
+
+
+Key Points:
+    It is the root interface of the Collection framework.
+    It only has one abstract method → iterator().
+    Any class implementing Iterable must provide an Iterator to iterate over elements.
+    Enables usage of for-each loop (for(T item : collection)).
+Example: List, Set, Queue all implement Iterable.
+
+
+2. Iterator (Interface)
+    Package: java.util
+    Purpose: Provides methods to traverse elements one by one.
+
+Definition:
+
+public interface Iterator<E> {
+    boolean hasNext();
+    E next();
+    default void remove();   // optional operation
+}
+
+
+Key Points:
+    Used to actually traverse the elements of a collection.
+    Provides:
+        hasNext() → checks if more elements exist
+        next() → returns next element
+        remove() → removes the current element (optional)
+
+Internal Difference
+| Feature              | Iterable                                                              | Iterator                                      |
+| -------------------- | --------------------------------------------------------------------- | --------------------------------------------- |
+| **Location**         | `java.lang`                                                           | `java.util`                                   |
+| **Role**             | Provides the ability to return an `Iterator`                          | Provides methods to traverse elements         |
+| **Method**           | `iterator()`                                                          | `hasNext()`, `next()`, `remove()`             |
+| **For-each support** | Enables enhanced for-each loop                                        | Cannot directly support for-each              |
+| **Usage**            | Defines a collection that can be iterated                             | Defines the cursor to traverse the collection |
+| **Example**          | `List<String> list = new ArrayList<>();` (list implements `Iterable`) | `Iterator<String> it = list.iterator();`      |
+
+
+
+Example with Both
+
+import java.util.*;
+
+public class IterableVsIterator {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("Java");
+        list.add("Spring");
+        list.add("Microservices");
+
+        // Iterable usage -> for-each loop
+        for (String item : list) {
+            System.out.println("Iterable: " + item);
+        }
+
+        // Iterator usage -> manual traversal
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            System.out.println("Iterator: " + iterator.next());
+        }
+    }
+}
+
+
+In Simple Words
+
+Iterable = Contract → says "This collection can be iterated. I’ll give you an Iterator."
+Iterator = Worker → says "I’ll move through the collection one by one."
+
+
          */
     }
 }
