@@ -59,6 +59,47 @@ Common Interview Questions on JCF
 10.When to use WeakHashMap?
 
 
+=> Java Collection Framework Hierarchy
+
+               Iterable (interface)
+                     |
+              Collection (interface)
+   ------------------------------------------------
+   |                        |                      |
+   List (interface)         Set (interface)        Queue (interface)
+   |                        |                      |
+   |                        |                      |
+ArrayList               HashSet                PriorityQueue
+LinkedList              LinkedHashSet          ArrayDeque
+Vector                  TreeSet
+Stack                   EnumSet
+                        SortedSet (interface)
+                        NavigableSet (interface)
+
+
+=> Map Hierarchy (separate, not under Collection)
+
+              Map (interface)
+   ----------------------------------------------------
+   |             |               |          |          |
+ HashMap     LinkedHashMap     TreeMap   Hashtable   EnumMap
+   |                                      |
+ConcurrentHashMap                   Properties
+WeakHashMap
+IdentityHashMap
+
+
+=> Utility Classes (Helper for Collections & Arrays)
+
+Collections class
+    - Provides static utility methods for collections like sort(), binarySearch(),
+        reverse(), shuffle(), min(), max(), unmodifiableList(), etc.
+
+Arrays class
+    - Provides static utility methods for arrays like sort(), binarySearch(),
+        asList(), copyOf(), equals(), fill(), stream(), etc.
+
+        
          */
     }
 }
