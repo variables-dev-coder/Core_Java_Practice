@@ -99,7 +99,70 @@ Arrays class
     - Provides static utility methods for arrays like sort(), binarySearch(),
         asList(), copyOf(), equals(), fill(), stream(), etc.
 
-        
+
+Iterable Interface
+
+1. What is Iterable?
+    Iterable is the root interface of the Java Collection Framework.
+    Every collection class like List, Set, and Queue implements Iterable (directly or indirectly).
+    It was introduced in Java 5 as part of the Enhanced For Loop (for-each loop) feature.
+
+Declaration:
+
+public interface Iterable<T> {
+    Iterator<T> iterator();
+}
+
+
+2. Why Iterable?
+    It allows a collection of objects to be iterated one by one.
+    Without Iterable, we couldn’t use the for-each loop (for(Object o : collection)).
+    It provides a standard way to loop through collections.
+
+3. Methods in Iterable Interface
+| Method                                         | Description                                  |
+| ---------------------------------------------- | -------------------------------------------- |
+| `Iterator<T> iterator()`                       | Returns an iterator for traversing elements. |
+| `forEach(Consumer<? super T> action)` (Java 8) | Performs an action for each element.         |
+| `Spliterator<T> spliterator()` (Java 8)        | Used for parallel stream processing.         |
+
+
+4. Example 1 – Using Iterable with ArrayList
+
+import java.util.*;
+
+public class IterableExample {
+    public static void main(String[] args) {
+        List<String> names = new ArrayList<>();
+        names.add("Munna");
+        names.add("Aziz");
+        names.add("Ravi");
+
+        // ✅ Using Iterator (from Iterable)
+        Iterator<String> it = names.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+        // ✅ Using Enhanced For Loop (because of Iterable)
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        // ✅ Using forEach() (Java 8+)
+        names.forEach(System.out::println);
+    }
+}
+
+
+5. Key Points
+
+    Iterable makes Collections framework unified under one common interface.
+    Iterator is returned by iterator() method and provides next(), hasNext(), and remove().
+    Iterable → Collection → List/Set/Queue.
+    Even Map is not directly iterable (since it’s key-value), but you can iterate using entrySet(), keySet(), or values().
+
+
          */
     }
 }
