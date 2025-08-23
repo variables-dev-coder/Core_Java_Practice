@@ -22,6 +22,13 @@ public class StringCaseExample {
 
 /*
 
+Uppercase: JAVA PROGRAMMING
+Lowercase: java programming
+Default upper (i): I
+Turkish upper (i): İ
+Root upper (i): I
+
+
 Topic 9: Case Conversion & Locale
 Explanation
 
