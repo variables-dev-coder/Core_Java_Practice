@@ -13,3 +13,5 @@ public class StringJoinerExample {
         System.out.println(joiner);
     }
 }
+
+// [Apple, Banana, Mango]
