@@ -108,6 +108,53 @@ Deletion (O(n))
 
 
 
+How arrays are stored in memory (contiguous blocks)
+
+Array storage: In Java, arrays are stored in contiguous memory locations.
+Example: int[] arr = {10, 20, 30, 40};
+
+    arr[0] → stored at base address 1000 (say).
+    arr[1] → stored at 1004 (next 4 bytes, since int is 4 bytes).
+    Accessing any element is O(1) because arr[i] = baseAddress + (i * sizeOfDatatype).
+
+
+Difference between Array and ArrayList
+
+| Feature     | Array                                 | ArrayList                                               |
+| ----------- | ------------------------------------- | ------------------------------------------------------- |
+| Size        | Fixed at creation                     | Dynamic, can grow/shrink                                |
+| Data Types  | Can store **primitives & objects**    | Stores **objects only** (e.g., `Integer`, not `int`)    |
+| Performance | Faster because direct memory indexing | Slower due to dynamic resizing & wrapper class overhead |
+| Memory      | Contiguous memory                     | May use extra memory during resizing                    |
+| Syntax      | `int[] arr = new int[5];`             | `ArrayList<Integer> list = new ArrayList<>();`          |
+
+
+Why arrays are faster than linked structures
+
+Arrays → Contiguous memory → direct indexing using formula → O(1) access.
+Linked List → Elements stored randomly in memory → each access requires traversing nodes → O(n) access.
+That’s why arrays are faster for indexing and iteration.
+
+
+Common Edge Cases in Arrays
+
+1. Empty array
+    Input: []
+    Edge case in min/max, search, sum operations → must handle if (arr.length == 0) return.
+
+2. Negative values
+    Example: [-1, -5, 3]
+    Must handle properly in max subarray sum (Kadane’s), or when searching.
+
+3. Duplicates
+    Example: [1, 2, 2, 3]
+    Important in "remove duplicates", "two-sum", "search" problems.
+
+4. Integer overflow in sum
+    Example: very large array sum → int overflow.
+    Use long instead of int when summing large arrays.
+
+
 
          */
     }
