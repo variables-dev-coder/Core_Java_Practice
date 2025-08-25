@@ -79,3 +79,14 @@ public class SinglyLinkedListMain {
         list.printList(); // Output: 10 → 15 → 20 → 30 → null
     }
 }
+
+/*
+
+Operations:
+1.Insert at Head – Add new node at the beginning.
+2.Insert at Tail – Add new node at the end.
+3.Insert at Specific Index – Add new node at any given position.
+
+
+
+ */
