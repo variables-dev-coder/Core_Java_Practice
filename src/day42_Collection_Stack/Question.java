@@ -70,7 +70,53 @@ System.out.println(stack.search("X")); // -1
     It has extra synchronization overhead.
     Most developers prefer Deque for stack operations.
 
+8. Real-time use cases of Stack?
+    Undo/Redo in editors
+    Browser back/forward navigation
+    Expression evaluation (((a+b)*c))
+    Recursive function calls (Call Stack)
 
+9. Time complexity of stack operations?
+Answer:
+    push() → O(1)
+    pop() → O(1)
+    peek() → O(1)
+    search() → O(n)
+
+10. Can we implement Stack without Stack class?
+
+Answer:
+Yes.
+Using Array (fixed size).
+Using LinkedList (dynamic size).
+Using ArrayDeque (recommended, faster).
+
+
+11. Is Stack synchronized in Java?
+
+Answer:
+Yes, Stack is synchronized since it extends Vector. But because of
+ synchronization, it’s slower than alternatives like ArrayDeque for stack operations.
+
+12. Difference between Stack and Queue?
+
+Answer:
+Stack: LIFO (Last In, First Out) → e.g., Browser back button
+Queue: FIFO (First In, First Out) → e.g., Printer queue
+
+13. What is a Stack in Java?
+
+Answer:
+A stack is a LIFO (Last In, First Out) data structure. In Java, it’s implemented using
+the Stack class (java.util.Stack) which extends Vector.
+
+    push() → insert element on top
+    pop() → remove top element
+    peek() → see top element without removing
+    empty() → check if stack is empty
+    search() → position of element (1-based index from top)
+
+    
          */
     }
 }
