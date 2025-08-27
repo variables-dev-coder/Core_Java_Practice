@@ -70,7 +70,7 @@ System.out.println(stack.search("X")); // -1
     It has extra synchronization overhead.
     Most developers prefer Deque for stack operations.
 
-    
+
          */
     }
 }
