@@ -116,7 +116,7 @@ the Stack class (java.util.Stack) which extends Vector.
     empty() → check if stack is empty
     search() → position of element (1-based index from top)
 
-    
+
          */
     }
 }
