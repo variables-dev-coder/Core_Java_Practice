@@ -12,6 +12,7 @@ Logic: Traverse from right → left, use stack to store greater elements.
  */
 
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class NextGreaterElement {
@@ -36,3 +37,20 @@ public class NextGreaterElement {
         // Output: [5, 25, 25, -1]
     }
 }
+
+/*
+Queue: [10, 20, 30]
+Peek: 10
+Removed: 10
+Queue after poll: [20, 30]
+
+Queue Use Cases (Real-World)
+
+1.Task Scheduling (CPU scheduling, Round Robin).
+2.Order Processing (first order first serve).
+3.Message Queues (Kafka, RabbitMQ, etc.).
+4.Printer Jobs.
+5.Breadth First Search (BFS) in graphs/trees.
+
+
+ */
