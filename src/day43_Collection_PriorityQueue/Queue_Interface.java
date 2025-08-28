@@ -55,6 +55,26 @@ Important Queue Methods
 
 
 
+Queue vs PriorityQueue in Java
+
+| Feature                  | **Queue**                                                                                                      | **PriorityQueue**                                                                                                   |
+| -------------------------|--------------------------------------------------------------------------------------------------------------- |------------------------------------------------------------------------------------------------------------------- |
+| Definition               | A collection designed for holding elements prior to processing, usually in **FIFO** (First-In-First-Out) order.| A special type of Queue where elements are ordered according to **natural ordering** or by a **custom Comparator**. |
+| Order                    | Elements are processed in the order they are inserted (FIFO).                                                  | Elements are processed based on **priority** (min-heap by default, smallest/highest priority element first).        |
+| Null elements            | Most implementations (like LinkedList as Queue) allow a single `null`.                                         | **Does not allow `null`** elements.                                                                                 |
+| Insertion                | `add(e)` / `offer(e)` inserts at the tail.                                                                     | `add(e)` / `offer(e)` inserts based on priority, not position.                                                      |
+| Removal                  | `remove()` / `poll()` removes from the head (first inserted element).                                          | `remove()` / `poll()` removes the **highest priority element** (smallest in natural order).                         |
+| Peek                     | `peek()` returns the head element (FIFO order).                                                                | `peek()` returns the element with **highest priority** (smallest by default).                                       |
+| Underlying Data Structure| Usually **LinkedList** or **ArrayDeque**.                                                                      | Backed by a **binary heap (min-heap)**.                                                                             |
+| Use Case                 | Task scheduling, buffer management, request handling.                                                          | Dijkstra’s Algorithm, Huffman Coding, scheduling jobs by priority.                                                  |
+
+
+In simple terms:
+
+Queue → FIFO (line in a ticket counter).
+PriorityQueue → Based on importance (emergency room where critical patients are treated first).
+
+
 
          */
     }
