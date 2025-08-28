@@ -76,6 +76,63 @@ PriorityQueue → Based on importance (emergency room where critical patients ar
 
 
 
+
+
+
+This is one of the most asked interview concepts in Queue — when to use
+add() vs offer(), remove() vs poll(), element() vs peek().
+
+1. add(e) vs offer(e) → Insert
+
+add(e)
+    Inserts the element.
+    Throws exception (IllegalStateException) if the queue is full (like in bounded queues).
+    Used when failure is considered exceptional.
+
+offer(e)
+    Inserts the element.
+    Returns true/false if insertion succeeded or failed.
+    Used when you want to handle failure gracefully (without exception).
+
+Rule:
+
+    If you want strict insertion and failure is abnormal → add(e).
+    If you want safe insertion without exception → offer(e).
+
+2. remove() vs poll() → Delete head
+
+remove()
+Deletes and returns head element.
+Throws exception (NoSuchElementException) if queue is empty.
+
+poll()
+Deletes and returns head element.
+Returns null if queue is empty (no exception).
+
+Rule:
+If you want exception when queue is empty → remove().
+If you want null instead of crash → poll().
+
+
+3. element() vs peek() → View head
+
+element()
+Returns head element without removing.
+Throws exception (NoSuchElementException) if queue is empty.
+
+peek()
+Returns head element without removing.
+Returns null if queue is empty.
+
+Rule:
+If you expect the queue always has elements → element().
+If you want safe check without exception → peek().
+
+Interview Mnemonic (Easy to Remember):
+Exception group → add(), remove(), element()
+Safe group → offer(), poll(), peek()
+
+
          */
     }
 }
