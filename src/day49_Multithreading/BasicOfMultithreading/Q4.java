@@ -1,6 +1,6 @@
 package day49_Multithreading.BasicOfMultithreading;
 
-
+//Use join() so the main thread waits until a worker thread finishes execution.
 
 class Worker extends Thread {
     public void run() {
