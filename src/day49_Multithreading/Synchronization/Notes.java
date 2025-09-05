@@ -360,7 +360,83 @@ Q5. Can synchronization cause deadlock?
 Yes, with multiple locks and inconsistent ordering. (We’ll tackle deadlocks on Day 4.)
 
 
+===================================
 
+
+Types of Synchronization in Java
+1. Intrinsic Locking (synchronized)
+    Keyword-based, simplest way.
+    Locks are associated with every object (monitor).
+
+Variants:
+    Instance method → lock on this
+    Static method → lock on Class object
+    Block → lock on any chosen object
+
+This is what we studied today.
+
+
+====================================
+
+
+2. Volatile (lightweight synchronization)
+    Keyword for visibility (not mutual exclusion).
+    Ensures reads/writes go straight to main memory.
+    Example: volatile boolean flag = true;
+    Useful for simple flags, but not for compound actions (x++).
+
+
+
+=====================================
+
+
+3. Explicit Locks (java.util.concurrent.locks)
+    ReentrantLock: same as synchronized but more flexible (tryLock, lockInterruptibly, fairness).
+    ReadWriteLock: multiple readers OR one writer at a time.
+    StampedLock (Java 8): supports optimistic reads (faster when contention is low).
+
+
+=========================
+
+4. Atomic Variables (java.util.concurrent.atomic)
+    Like AtomicInteger, AtomicLong, AtomicReference.
+    Provide lock-free, thread-safe operations (incrementAndGet(), compareAndSet()).
+    Use CAS (Compare-And-Swap) under the hood.
+
+========================
+
+5. Thread-safe Collections
+    Legacy: Vector, Hashtable (synchronized internally).
+    Modern: Collections.synchronizedList(), ConcurrentHashMap, CopyOnWriteArrayList.
+
+
+=============================
+
+6. Higher-Level Concurrency Utilities
+    Executor framework (ExecutorService, thread pools).
+    BlockingQueue (ArrayBlockingQueue, LinkedBlockingQueue) → built-in synchronization for producer-consumer.
+    Semaphore → control number of permits (like controlling resource pool).
+    CountDownLatch / CyclicBarrier / Phaser → coordination between threads.
+    Exchanger → swap data between two threads.
+
+==============================
+
+Summary
+
+So, synchronization in Java is not only synchronized keyword.
+We have multiple tools depending on what we need:
+
+Basic lock → synchronized
+
+Visibility only → volatile
+
+Advanced lock → ReentrantLock, ReadWriteLock, StampedLock
+
+Lock-free atomic ops → AtomicInteger, AtomicReference
+
+Thread-safe data structures → ConcurrentHashMap, BlockingQueue
+
+Coordination helpers → CountDownLatch, Semaphore, etc.
 
 
 
