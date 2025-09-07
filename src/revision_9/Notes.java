@@ -178,7 +178,7 @@ Key Interview Points
 4.Can finally block be skipped?
     Yes → if System.exit(0) is called in try/catch.
 
-    
+
          */
     }
 }
