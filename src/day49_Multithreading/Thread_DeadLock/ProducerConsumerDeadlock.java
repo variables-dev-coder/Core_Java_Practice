@@ -46,5 +46,5 @@ public class ProducerConsumerDeadlock {
 Explanation
 Producer → lock1 → lock2
 Consumer → lock2 → lock1
-Opposite lock order → Deadlock 
+Opposite lock order → Deadlock
  */
