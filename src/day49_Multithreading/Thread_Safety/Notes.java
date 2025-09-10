@@ -220,6 +220,51 @@ Summary
     These tools ensure thread safety in different scenarios.
 
 
+=====================================================================
+
+
+Theory Questions
+----------------
+Q1. What is thread safety?
+Answer:
+Thread safety means that multiple threads can access a shared resource without corrupting data
+or producing inconsistent results.
+Achieved using synchronization, locks, volatile, atomic variables, etc.
+
+
+
+Q2. Difference between volatile and synchronized?
+Answer:
+volatile → ensures visibility (all threads see updated value). No locking.
+synchronized → ensures atomicity + visibility (only one thread executes critical section).
+
+
+
+Q3. When should you use AtomicInteger instead of synchronized?
+Answer:
+Use AtomicInteger when you only need atomic operations (increment, get, set).
+Use synchronized/locks when you need to protect complex critical sections.
+
+
+
+Q4. What is the difference between ReentrantLock and synchronized?
+Answer:
+Both provide mutual exclusion.
+ReentrantLock offers:
+    ✔ tryLock() with timeout
+    ✔ Fairness policy
+    ✔ Condition variables
+synchronized is simpler but less flexible.
+
+
+
+Q5. When to use ReadWriteLock?
+Answer:
+Use when reads are frequent but writes are rare.
+Multiple readers can access simultaneously, but only one writer at a time.
+
+
+
 
          */
     }
