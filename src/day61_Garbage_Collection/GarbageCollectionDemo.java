@@ -19,7 +19,7 @@ public class GarbageCollectionDemo {
         System.gc();
         Runtime.getRuntime().gc();
     }
-    
+
     @Override
     protected void finalize() throws Throwable {
         System.out.println("Finalize method called before GC!");
