@@ -10,3 +10,7 @@ public class Easy1_GarbageSimple {
 }
 
 // Done
+
+//Run: javac Easy1_GarbageSimple.java && java Easy1_GarbageSimple
+//Expected: Prints Done. System.gc() is a suggestion.
+//Explanation: Demonstrates a basic object becoming unreachable when its reference is set to null.
