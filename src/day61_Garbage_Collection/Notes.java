@@ -247,7 +247,7 @@ Summary for Mastery
     pause durations (more memory to traverse). Also, longer-tenured objects may increase
     fragmentation/compaction costs. Collector choice and tuning matter.
 
-     
+
 
          */
 
