@@ -32,4 +32,4 @@ public class Medium2_MemoryMonitor {
 
 
 
-//xplanation: Simple monitoring to observe how GC frees memory over iterations.
+//Explanation: Simple monitoring to observe how GC frees memory over iterations.
