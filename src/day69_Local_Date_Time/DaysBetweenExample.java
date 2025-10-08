@@ -1,5 +1,7 @@
 package day69_Local_Date_Time;
 
+// Calculate Days Between Two Dates (Without Period Yet)
+
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
@@ -15,3 +17,8 @@ public class DaysBetweenExample {
 }
 
 //Days since project started: 280
+
+//Concepts Used:
+//ChronoUnit.DAYS.between(start, end) calculates difference in days.
+//Perfect for showing project durations, age in days, etc.
+//Real-world use: Counting subscription days or user account age.
