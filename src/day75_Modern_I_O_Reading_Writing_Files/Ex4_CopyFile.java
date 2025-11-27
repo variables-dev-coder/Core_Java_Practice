@@ -13,3 +13,6 @@ public class Ex4_CopyFile {
         Files.copy(src, dest, StandardCopyOption.REPLACE_EXISTING);
     }
 }
+
+//Explanation
+//Copies file and replaces if already exists.
