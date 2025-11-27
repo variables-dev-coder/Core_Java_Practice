@@ -1,0 +1,4 @@
+Munna Read file using Stream.
+Java is fun
+Modern NIO is easy
+hello my love
