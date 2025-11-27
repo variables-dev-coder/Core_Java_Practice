@@ -14,3 +14,6 @@ public class Ex1_ReadFile {
         lines.forEach(System.out::println);
     }
 }
+
+//Explanation
+//Reads all text lines from example1.txt and prints them.
