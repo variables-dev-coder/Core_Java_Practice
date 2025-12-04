@@ -3,7 +3,7 @@ package revision_16;
 import java.util.*;
 
 public class KFrequentWords {
-    
+
     public static List<String> topKFrequent(String[] words, int k) {
         Map<String, Integer> map = new HashMap<>();
 
