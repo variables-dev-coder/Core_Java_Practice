@@ -1,0 +1,6 @@
+===== FILE SUMMARY REPORT =====
+Total Lines: 0
+Total Words: 0
+Characters (with spaces): 0
+Characters (without spaces): 0
+=================================

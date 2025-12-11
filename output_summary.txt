@@ -1,0 +1,6 @@
+===== FILE SUMMARY REPORT =====
+Total Lines: 3
+Total Words: 12
+Characters (with spaces): 61
+Characters (without spaces): 52
+=================================
