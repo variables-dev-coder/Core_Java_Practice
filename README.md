@@ -183,14 +183,12 @@ cd Core_Java_Practice
 
 ---
 
-## 📫 Contact & Connect
+## 📫 Connect With Me
 
-Feel free to connect with me for discussions, collaborations, or opportunities related to **Java, Backend Development, and Software Engineering**.
-
-- 💼 **LinkedIn:** [https://www.linkedin.com/in/munna-aziz-mondal-061b95212/](https://www.linkedin.com/in/munna-aziz-mondal-061b95212/)
-- 🐦 **Twitter (X):** [https://x.com/the_departed__](https://x.com/the_departed__)
-- 📧 **Email:** [azizmunna661@gmail.com](mailto:azizmunna661@gmail.com)
-- 📱 **WhatsApp:** [Chat on WhatsApp](https://wa.me/917872148875)
+- 💼 **LinkedIn** → [Click here](https://www.linkedin.com/in/munna-aziz-mondal-061b95212/)
+- 🐦 **Twitter (X)** → [Click here](https://x.com/the_departed__)
+- 📧 **Email** → [Send mail](mailto:azizmunna661@gmail.com)
+- 📱 **WhatsApp** → [Chat now](https://wa.me/917872148875)
 
 I’m always open to learning, sharing knowledge, and building impactful software 🚀
 
