@@ -1,161 +1,184 @@
-# Core Java — Complete Mastery (Basics to JVM Internals) ☕🚀
+# ☕ Java Language Mastery – Complete Core to Advanced Guide
 
-This repository represents my **complete and in-depth mastery of Core Java**, built through **systematic learning and extensive hands-on practice**.
-
-All concepts — from **foundational syntax** to **advanced JVM internals** — are **fully completed and practiced**, with an interview-oriented and backend-focused approach.
-
----
-
-## ✅ Complete Syllabus Coverage
-
-### I. Foundational Syntax & Structure
-- Main Method & Basic Program Structure  
-- Variables: Declaration, Initialization, Scope  
-- Primitive Data Types: byte, short, int, long, float, double, char, boolean  
-- Reference Types vs Primitive Types  
-- Operators: Arithmetic, Unary, Assignment, Relational, Logical, Bitwise, Ternary  
-- Control Flow Statements  
-  - Conditional: if, if-else, switch (enhanced switch with `->`, multi-case labels)  
-  - Looping: for, enhanced for-loop, while, do-while  
-  - Branching: break, continue, return  
+A comprehensive **Java learning repository** covering **core fundamentals, modern Java features, JVM internals, functional programming, concurrency, and performance basics**.  
+This repository is designed as a **structured reference + practice archive** for mastering Java from **beginner to advanced level** using **modern JDK standards (Java 8 → Java 17+)**.
 
 ---
 
-### II. Object-Oriented Programming (OOP) Core
-- Classes & Objects  
-- Methods: Parameters, Return Types, Overloading  
-- Constructors: Default & Parameterized  
-- `this` Keyword  
-- Access Modifiers: public, protected, private, package-private  
+## 📌 Repository Goals
 
-#### Four Pillars of OOP
-- Encapsulation (Getters & Setters)  
-- Inheritance (`extends`, `super`, Method Overriding, Object class)  
-- Polymorphism (Compile-time vs Runtime)  
-- Abstraction (Abstract classes & methods)  
-
-- Interfaces (Traditional + Modern: default, private, static methods)  
-- Records (JDK 16+)  
-- Sealed Classes & Interfaces (JDK 17+)  
+- Build **strong Java fundamentals**
+- Understand **modern Java features**
+- Practice **clean, idiomatic Java**
+- Prepare for **interviews, real-world projects, and backend frameworks**
+- Serve as a **long-term Java reference repository**
 
 ---
 
-### III. Core APIs & Memory Management
-- String Class, Immutability & Performance  
-- StringBuilder & StringBuffer  
-- Arrays (Single & Multi-dimensional)  
-- Packages & `import`  
-- Java Memory Model: Stack vs Heap  
-- Garbage Collection Concepts & Generational Model  
+## 🧱 Java Language Mastery Index
 
 ---
 
-### IV. Exception Handling
-- Error vs Exception (Checked & Unchecked)  
-- try-catch-finally  
-- try-with-resources  
-- `throw` keyword  
-- Custom Exception Classes  
+## I. Foundational Syntax & Structure
+
+- Main method & program structure
+- Variables: declaration, initialization, scope
+- Primitive data types
+- Reference vs primitive types
+- Operators (arithmetic, logical, bitwise, ternary)
+- Control flow:
+  - `if`, `if-else`, `switch` (enhanced switch)
+  - `for`, enhanced for-loop, `while`, `do-while`
+  - `break`, `continue`, `return`
 
 ---
 
-### V. Collections Framework
-- Core Interfaces: Collection, List, Set, Queue, Map  
+## II. Object-Oriented Programming (OOP)
 
-#### Key Implementations
-- List: ArrayList, LinkedList  
-- Set: HashSet, LinkedHashSet, TreeSet  
-- Queue: PriorityQueue, ArrayDeque  
-- Map: HashMap, LinkedHashMap, TreeMap  
-
-- equals() & hashCode() contract  
-- Comparable & Comparator  
-- Concurrent Collections: ConcurrentHashMap, CopyOnWriteArrayList  
-
----
-
-### VI. Generics
-- Generic Classes & Methods  
-- Bounded Type Parameters  
-- Type Inference & Diamond Operator (`<>`)  
-- Wildcards:  
-  - Upper-bounded (`? extends T`)  
-  - Lower-bounded (`? super T`)  
-  - Unbounded (`?`)  
+- Classes & objects
+- Methods & method overloading
+- Constructors (default & parameterized)
+- `this` keyword
+- Access modifiers
+- OOP pillars:
+  - Encapsulation
+  - Inheritance
+  - Polymorphism
+  - Abstraction
+- Interfaces (default, private, static methods)
+- Records (Java 16+)
+- Sealed classes & interfaces (Java 17+)
 
 ---
 
-### VII. Functional Programming (Java 8+)
-- Lambda Expressions  
-- Functional Interfaces  
-  - Predicate, Function, Supplier, Consumer, UnaryOperator  
-- Method References  
-- Optional (null safety)  
+## III. Core APIs & Memory Management
 
-#### Stream API
-- Stream Creation (Collections, Arrays, I/O)  
-- Intermediate Operations: filter, map, flatMap, sorted, distinct, peek  
-- Terminal Operations: forEach, collect, reduce, count, anyMatch, findFirst  
-- Parallel Streams (use cases & pitfalls)  
+- `String`, immutability & performance
+- `StringBuilder` & `StringBuffer`
+- Arrays (1D & multi-dimensional)
+- Packages & `import`
+- Java Memory Model (Stack vs Heap)
+- Garbage Collection fundamentals
 
 ---
 
-### VIII. Concurrency & Multithreading
-- Thread creation: Thread vs Runnable  
-- ExecutorService Framework  
-- Synchronization (`synchronized`, intrinsic locks)  
-- `volatile` keyword  
-- Explicit Locks: ReentrantLock, ReadWriteLock  
+## IV. Exception Handling
 
-#### High-Level Concurrency
-- Callable & Future  
-- CompletableFuture (Asynchronous programming)  
-- Synchronized vs Concurrent Collections  
+- Error vs Exception
+- Checked vs unchecked exceptions
+- `try-catch-finally`
+- Try-with-resources
+- `throw` keyword
+- Custom exceptions
 
 ---
 
-### IX. Modern I/O & Data Handling
-- Date & Time API (`java.time`)  
-  - LocalDate, LocalTime, LocalDateTime, ZonedDateTime  
-  - Period, Duration  
-- NIO.2 File I/O  
-  - Path, Paths, Files  
+## V. Collections Framework
+
+### Core Interfaces
+- `Collection`, `List`, `Set`, `Queue`, `Map`
+
+### Implementations
+- List: `ArrayList`, `LinkedList`
+- Set: `HashSet`, `LinkedHashSet`, `TreeSet`
+- Queue: `PriorityQueue`, `ArrayDeque`
+- Map: `HashMap`, `LinkedHashMap`, `TreeMap`
+
+### Advanced Concepts
+- `equals()` & `hashCode()` contract
+- `Comparable` & `Comparator`
+- Concurrent collections
 
 ---
 
-### X. Advanced Topics & JVM Internals
-- Annotations (Built-in & Custom)  
-- Reflection (Runtime class inspection)  
-- Classloading Basics  
-- Java Modules (JPMS – JDK 9+)  
-- Performance Tuning Basics  
-  - JVM Flags (`-Xms`, `-Xmx`)  
-  - GC tuning introduction  
-- JVM Architecture Overview  
+## VI. Generics
+
+- Generic classes & methods
+- Bounded type parameters
+- Diamond operator (`<>`)
+- Wildcards:
+  - `? extends`
+  - `? super`
+  - Unbounded `?`
 
 ---
 
-## 🧠 Learning & Practice Approach
-- Deep conceptual clarity (not surface-level learning)
-- Multiple practice problems per topic
-- Interview-oriented explanations
-- Clean, readable, and optimized Java code
-- Focus on **why + how**, not memorization
+## VII. Functional Programming (Java 8+)
+
+- Lambda expressions
+- Functional interfaces:
+  - `Predicate`
+  - `Function`
+  - `Supplier`
+  - `Consumer`
+- Method references
+- `Optional`
+- Stream API:
+  - Creation
+  - Intermediate operations
+  - Terminal operations
+  - Parallel streams
 
 ---
 
-## 🛠️ Tools & Environment
-- Java: JDK 8 → JDK 17
-- IntelliJ IDEA / Eclipse
-- Git & GitHub
+## VIII. Concurrency & Multithreading
+
+- Thread creation (`Thread` vs `Runnable`)
+- `ExecutorService`
+- Synchronization & intrinsic locks
+- `volatile`
+- Explicit locks:
+  - `ReentrantLock`
+  - `ReadWriteLock`
+- High-level concurrency:
+  - `Callable` & `Future`
+  - `CompletableFuture`
+- Concurrent vs synchronized collections
 
 ---
 
-## 🎯 Purpose of This Repository
-- Proof of **strong Core Java foundation**
-- Interview preparation & revision reference
-- Base for backend development (Spring Boot, Microservices)
-- Demonstration of disciplined, long-term learning
+## IX. Modern I/O & Data Handling
+
+- Java Date & Time API (`java.time`)
+- File handling with NIO.2 (`Path`, `Files`, `Paths`)
+
+---
+
+## X. Advanced Topics & JVM Internals
+
+- Annotations (built-in & custom)
+- Reflection
+- Classloading basics
+- Java Modules (JPMS)
+- JVM tuning basics (`-Xms`, `-Xmx`)
+- JVM architecture overview
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Java (8 → 17+)
+- **Build Tool:** Maven / Gradle (optional)
+- **IDE:** IntelliJ IDEA / Eclipse / VS Code
+- **Style:** Clean, readable, best-practice Java
+
+---
+
+## 🎯 Who This Repository Is For
+
+- Java beginners building strong foundations
+- Intermediate developers leveling up
+- Backend developers preparing for Spring Boot
+- Interview preparation (Core Java + Advanced)
+- Anyone wanting a **modern Java reference**
+
+---
+
+## 🚀 How to Use
+
+```bash
+git clone https://github.com/variables-dev-coder/Core_Java_Practice.git
+cd Core_Java_Practice
 
 
 ---
