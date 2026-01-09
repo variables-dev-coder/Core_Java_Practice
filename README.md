@@ -183,16 +183,5 @@ cd Core_Java_Practice
 
 ---
 
-## 📫 Connect With Me
-
-- 💼 **LinkedIn** → [Click here](https://www.linkedin.com/in/munna-aziz-mondal-061b95212/)
-- 🐦 **Twitter (X)** → [Click here](https://x.com/the_departed__)
-- 📧 **Email** → [Send mail](mailto:azizmunna661@gmail.com)
-- 📱 **WhatsApp** → [Chat now](https://wa.me/917872148875)
-
-I’m always open to learning, sharing knowledge, and building impactful software 🚀
-
-
----
 
 > ⭐ Star this repo if you're also learning Java or preparing for interviews. Let's grow and learn together!
